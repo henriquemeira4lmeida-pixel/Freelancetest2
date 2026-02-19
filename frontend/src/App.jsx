@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 
 // ── Configure base path here (no trailing slash) ──────────────────────────────
-const BASE_PATH = import.meta.env.VITE_BASE_PATH || ''
+const BASE_PATH = import.meta.env.VITE_API_URL || import.meta.env.VITE_BASE_PATH || ''
 const MAX_BYTES = 1 * 1024 * 1024 // 1 MB
 
 function formatBytes(bytes) {
